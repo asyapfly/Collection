@@ -32,6 +32,14 @@ public class Main {
             }
         }
 
+        List<Integer> newList2 = new ArrayList<>();
+        for(Integer i : randomList){
+            if(i > 3 && !newList2.contains(i - 2)){
+                newList2.add(i - 2);
+            }
+        }
+
         System.out.println(newList);
+        System.out.println(newList2);
     }
 }
